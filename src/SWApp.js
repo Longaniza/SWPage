@@ -6,7 +6,7 @@ const init = () => {
         logged:false
     }
 }
-export const IdolsApp = () => {
+export const SWApp = () => {
     
     return (
             <AppRouter/>  

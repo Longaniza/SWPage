@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { IdolsApp } from './IdolsApp';
+import { SWApp } from './SWApp';
 
-ReactDOM.render(<IdolsApp/>,
+ReactDOM.render(<SWApp/>,
   document.getElementById('root')
 );
 
