@@ -1,0 +1,33 @@
+.grupo{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.carta{
+    margin-top: 50px;
+}
+
+.vista-individual{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.search-screen-container{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-right:50px;
+    column-gap: 30px;
+}
+.search-screen-container-element1{
+    grid-column-start:1;
+}
+.search-screen-container-element2{
+    grid-column-start:2;
+}
+.nuevo{
+    margin-top: 5px;
+    width: 100%;
+}
