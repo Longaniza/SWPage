@@ -48,6 +48,34 @@ export const Navbar = () => {
                     >
                         Start Wars: Return of the Jedi
                     </NavLink>
+
+                    <NavLink 
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/movie4"
+                    >
+                        Star Wars: The Phantom Menace
+                    </NavLink>
+
+                    <NavLink 
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/movie5"
+                    >
+                        Star Wars: Attack of the Clones
+                    </NavLink>
+
+                    <NavLink 
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/movie6"
+                    >
+                        Star Wars: Revenge of the Sith
+                    </NavLink>
+
                     <NavLink 
                         activeClassName="active"
                         className="nav-item nav-link" 
