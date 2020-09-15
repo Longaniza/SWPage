@@ -23,22 +23,30 @@ export const Navbar = () => {
                     >
                         Blackpink
                     </NavLink>
+                    <NavLink 
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/movie1"
+                    >
+                        Star Wars: A New Hope
+                    </NavLink>
 
                     <NavLink 
                         activeClassName="active"
                         className="nav-item nav-link" 
                         exact
-                        to="/redvelvet"
+                        to="/movie2"
                     >
-                        Red Velvet
+                        Star Wars: The Empire Strikes Back
                     </NavLink>
                     <NavLink 
                         activeClassName="active"
                         className="nav-item nav-link" 
                         exact
-                        to="/gidle"
+                        to="/movie3"
                     >
-                        (G)I-DLE
+                        Start Wars: Return of the Jedi
                     </NavLink>
                     <NavLink 
                         activeClassName="active"
