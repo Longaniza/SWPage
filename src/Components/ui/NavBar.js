@@ -6,7 +6,7 @@ export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
             <Link className="navbar-brand" to={publico + "/"}>
-            <img src="/assets/planets/SWLogo.png" width="50"  alt="" loading="lazy"/>
+            <img src="./assets/planets/SWLogo.png" width="50"  alt="" loading="lazy"/>
             </Link>
 
 

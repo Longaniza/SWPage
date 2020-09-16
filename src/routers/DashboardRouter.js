@@ -10,7 +10,7 @@ import { AttackClonesScreen } from '../Components/movieScreens/AttackClonesScree
 import { RevengeSith } from '../Components/movieScreens/RevengeSith'
 import { PlanetSearch } from '../Components/movieScreens/PlanetSearch'
 //import { MovieScreen } from '../Components/movieScreens/MovieScreen'
-export const DashboardRouter = ({history}) => {
+export const DashboardRouter = () => {
     //const lastpath = localStorage.getItem('lastpath');
     const publico = process.env.PUBLIC_URL;
     return (
@@ -26,7 +26,7 @@ export const DashboardRouter = ({history}) => {
                     <Route exact path={publico + '/movie6'} component={RevengeSith}/>
                     <Route exact path={publico + "/planet/:planetName"} component={PlanetScreen}/>
                     <Route exact path={publico + "/search"} component={PlanetSearch}/>
-                    <Redirect to={publico + '/movie1'}/>
+                    <Redirect to={publico +'/movie1'}/>
                 </Switch>
             </div>   
         </>

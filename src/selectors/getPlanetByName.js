@@ -4,7 +4,7 @@ export const getPlanetByName = async(name) => {
     const planet = await resp.json();
     let next = planet.next;
     while(next){
-        const respNext = await fetch(next);
+        const respNext = await fetch(next.replace(/^http:/, 'https:'));
         const planetNext = await respNext.json();
         planet.results = [...planet.results,...planetNext.results]
         next = planetNext.next;

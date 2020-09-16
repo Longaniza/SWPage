@@ -9,7 +9,7 @@ export const PlanetScreen = ({history}) => {
     useEffect(() => {
         const getPlanet = async() => {
             const resp = await getPlanetByName(planetName);
-            console.log(resp.results[0]);
+            //console.log(resp.results[0]);
             setPlanet(resp.results[0]);
         }
         getPlanet();
@@ -29,7 +29,7 @@ export const PlanetScreen = ({history}) => {
         <div className="card mb-3 carta animate__animated animate__fadeInLeft" style={{maxWidth: 400}}>
         <div className="row no-gutters">
           <div className="col-md-4">
-          <img src={`../../assets/planets/${(planet.name).replace(/ /g,"-")}.png`} onError={(e)=>{e.target.onerror = null; e.target.src="/assets/planets/planetx.png"}} className="card-img-top" alt={planet.name}/>
+          <img src={`./assets/planets/${(planet.name).replace(/ /g,"-")}.png`} onError={(e)=>{e.target.onerror = null; e.target.src="./assets/planets/planetx.png"}} className="card-img-top" alt={planet.name}/>
           </div>
           <div className="col-md-8">
             <div className="card-body">
@@ -47,9 +47,9 @@ export const PlanetScreen = ({history}) => {
           </div>
         </div>
       </div>
-      </div>:<div class="d-flex justify-content-center m-5">
-  <div class="spinner-border" role="status">
-    <span class="sr-only">Loading...</span>
+      </div>:<div className="d-flex justify-content-center m-5">
+  <div className="spinner-border" role="status">
+    <span className="sr-only">Loading...</span>
   </div>
 </div>}
       </div>

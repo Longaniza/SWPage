@@ -1,6 +1,6 @@
 {
-  "name": "idols-bio",
-  "homepage": "https://longaniza.github.io/StarWarsMiniPage",
+  "name": "swpage",
+  "homepage": "https://longaniza.github.io/swpage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

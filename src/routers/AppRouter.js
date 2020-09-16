@@ -1,5 +1,6 @@
 import React from 'react'
 import {
+    BrowserRouter as Router,
     HashRouter,
     Switch,
     Route,
@@ -11,7 +12,7 @@ export const AppRouter = () => {
         <HashRouter>
           <div>
             <Switch>
-            <Route path={process.env.PUBLIC_URL + '/'} component={DashboardRouter}/>
+            <Route path="/" component={DashboardRouter}/>
             </Switch>
           </div>
         </HashRouter>
