@@ -11,7 +11,7 @@ export const AppRouter = () => {
         <HashRouter>
           <div>
             <Switch>
-            <Route path='/' component={DashboardRouter}/>
+            <Route path={process.env.PUBLIC_URL + '/'} component={DashboardRouter}/>
             </Switch>
           </div>
         </HashRouter>
