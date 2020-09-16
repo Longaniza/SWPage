@@ -1,6 +1,5 @@
-import React, { useEffect,useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { getPlanetsByMovie } from '../../selectors/getPlanetsByMovie';
+import React, { useEffect,useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { getPlanetByName } from '../../selectors/getPlanetByName';
 
 export const PlanetScreen = ({history}) => {
@@ -30,7 +29,7 @@ export const PlanetScreen = ({history}) => {
         <div className="card mb-3 carta animate__animated animate__fadeInLeft" style={{maxWidth: 400}}>
         <div className="row no-gutters">
           <div className="col-md-4">
-          <img src={`../assets/planets/${(planet.name).replace(/ /g,"-")}.png`} onError={(e)=>{e.target.onerror = null; e.target.src="/assets/planets/planetx.png"}} className="card-img-top" alt={planet.name}/>
+          <img src={`../../assets/planets/${(planet.name).replace(/ /g,"-")}.png`} onError={(e)=>{e.target.onerror = null; e.target.src="/assets/planets/planetx.png"}} className="card-img-top" alt={planet.name}/>
           </div>
           <div className="col-md-8">
             <div className="card-body">

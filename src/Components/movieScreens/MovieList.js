@@ -14,8 +14,8 @@ export const MovieList = ({idMovie}) => {
         
         <div className="grupo">
             {(planets) ? planets.map(planet => <MovieItem key={planet.name} planet={planet}/>):<div className="spinner-border m-5" role="status">
-  <span className="sr-only">Loading...</span>
-</div>}
+            <span className="sr-only">Loading...</span>
+            </div>}
         </div>
     )
 }

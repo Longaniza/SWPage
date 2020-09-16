@@ -1,4 +1,4 @@
-import React, {useMemo, useRef, useEffect,useState } from 'react'
+import React, {useEffect,useState } from 'react'
 import '../../index.css';
 import { useForm } from '../../hooks/useForm';
 import { useLocation } from 'react-router-dom';
@@ -30,7 +30,7 @@ export const PlanetSearch = ({history}) => {
         e.preventDefault();
         setPlanet(null);
         history.push(`?q=${values.textoBusqueda}`);
-        localStorage.setItem('lastpath', `/search?q=${values.textoBusqueda}`);
+        //localStorage.setItem('lastpath', `/search?q=${values.textoBusqueda}`);
     }
     //console.log()
     return (

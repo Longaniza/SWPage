@@ -1,21 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
-    BrowserRouter as Router,
+    HashRouter,
     Switch,
     Route,
-    Redirect,
   } from "react-router-dom";
 import { DashboardRouter } from './DashboardRouter';
 export const AppRouter = () => {
-  const lastpath = localStorage.getItem('lastpath')
-  console.log(lastpath);
+  //const lastpath = localStorage.getItem('lastpath')
     return (
-        <Router>
+        <HashRouter>
           <div>
             <Switch>
             <Route path='/' component={DashboardRouter}/>
             </Switch>
           </div>
-        </Router>
+        </HashRouter>
       );
 }

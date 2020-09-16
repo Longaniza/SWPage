@@ -1,6 +1,5 @@
 
 export const getPlanetByName = async(name) => {
-    const planets = [];
     const resp = await fetch(`https://swapi.dev/api/planets/?search=${name}`);
     const planet = await resp.json();
     let next = planet.next;

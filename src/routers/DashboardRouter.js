@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Redirect, Route, useHistory } from 'react-router-dom'
+import { Switch, Redirect, Route} from 'react-router-dom'
 import { Navbar } from '../Components/ui/NavBar'
 import { NewHopeScreen } from '../Components/movieScreens/NewHopeScreen'
 import { EmpireStrikesScreen } from '../Components/movieScreens/EmpireStrikesScreen'

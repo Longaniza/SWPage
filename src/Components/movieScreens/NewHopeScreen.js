@@ -1,7 +1,5 @@
-import React, { useEffect,useState } from 'react'
-import { getPlanetsByMovie } from '../../selectors/getPlanetsByMovie'
+import React from 'react'
 import { MovieList } from './MovieList';
-import { getPlanetByName } from '../../selectors/getPlanetByName';
 export const NewHopeScreen = () => {
     
     return (
