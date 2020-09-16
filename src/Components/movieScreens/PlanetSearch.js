@@ -42,7 +42,7 @@ export const PlanetSearch = ({history}) => {
                 <h3>Search for a Planet:</h3>
                 <hr/>
                 <form onSubmit={handleSearch}>
-                <input name="textoBusqueda" type="text" className="form-control" placeholder="..." onChange={handleInputChange} value={values.textoBusqueda}/>
+                <input name="textoBusqueda" type="text" className="form-control" placeholder="..." onChange={handleInputChange} value={values.textoBusqueda} autoComplete='off'/>
                 <button className="btn btn-outline-info nuevo">Search...</button>
                 </form>
                 </div>

@@ -17,7 +17,7 @@ export const Navbar = () => {
                         exact
                         to="/movie1"
                     >
-                        Star Wars: A New Hope
+                        Episode IV
                     </NavLink>
 
                     <NavLink 
@@ -26,7 +26,7 @@ export const Navbar = () => {
                         exact
                         to="/movie2"
                     >
-                        Star Wars: The Empire Strikes Back
+                        Episode V
                     </NavLink>
                     <NavLink 
                         activeClassName="active"
@@ -34,7 +34,7 @@ export const Navbar = () => {
                         exact
                         to="/movie3"
                     >
-                        Start Wars: Return of the Jedi
+                        Episode VI
                     </NavLink>
 
                     <NavLink 
@@ -43,7 +43,7 @@ export const Navbar = () => {
                         exact
                         to="/movie4"
                     >
-                        Star Wars: The Phantom Menace
+                        Episode I
                     </NavLink>
 
                     <NavLink 
@@ -52,7 +52,7 @@ export const Navbar = () => {
                         exact
                         to="/movie5"
                     >
-                        Star Wars: Attack of the Clones
+                        Episode II
                     </NavLink>
 
                     <NavLink 
@@ -61,7 +61,7 @@ export const Navbar = () => {
                         exact
                         to="/movie6"
                     >
-                        Star Wars: Revenge of the Sith
+                        Episode III
                     </NavLink>
 
                     <NavLink 

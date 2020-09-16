@@ -10,6 +10,7 @@ export const PlanetScreen = ({history}) => {
     useEffect(() => {
         const getPlanet = async() => {
             const resp = await getPlanetByName(planetName);
+            console.log(resp.results[0]);
             setPlanet(resp.results[0]);
         }
         getPlanet();
@@ -34,16 +35,24 @@ export const PlanetScreen = ({history}) => {
           <div className="col-md-8">
             <div className="card-body">
             <h5 className="card-title">{planet.name}</h5>
-          <p className="card-text"> <strong>Real Name: </strong>{planet.name}</p>
-          <p className="card-text"> <strong>Birth Date: </strong>{planet.name}</p>
-          <p className="card-text"> <strong>Birth Place:  </strong>{planet.name}</p>
-          <p className="card-text"> <strong>Group: </strong>{planet.name}</p>
+            <p className="card-text"> <strong>Climate: </strong>{planet.climate}</p>
+          <p className="card-text"> <strong>Diameter: </strong>{planet.diameter}</p>
+          <p className="card-text"> <strong>Gravity: </strong>{planet.gravity}</p>
+          <p className="card-text"> <strong>Orbital period: </strong>{planet.orbital_period}</p>
+          <p className="card-text"> <strong>Population </strong>{planet.population}</p>
+          <p className="card-text"> <strong>Rotation period: </strong>{planet.rotation_period}</p>
+          <p className="card-text"> <strong>Surface water: </strong>{planet.surface_water}</p>
+          <p className="card-text"> <strong>Terrain: </strong>{planet.terrain}</p>
           <button className="btn btn-outline-info" onClick={handleClick}>Return</button>
             </div>
           </div>
         </div>
       </div>
-      </div>:<h1>Hola mundo</h1>}
+      </div>:<div class="d-flex justify-content-center m-5">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>}
       </div>
     )        
     

@@ -3,6 +3,11 @@ import { MovieList } from './MovieList';
 
 export const EmpireStrikesScreen = () => {
     return (
-        <MovieList idMovie="2"></MovieList> 
+        <div>
+            <h1 style={{marginLeft:35}}>Star Wars: Episode V – The Empire Strikes Back</h1>
+            <hr/>
+            <MovieList idMovie="2"></MovieList> 
+        </div>
+            
     )
 }

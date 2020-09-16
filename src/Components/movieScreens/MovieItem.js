@@ -11,8 +11,8 @@ export const MovieItem = ({planet}) => {
           <div className="col-md-8">
             <div className="card-body">
     <       h5 className="card-title">{(planet.name).replace(/ /g,"-")}</h5>
-          <p className="card-text"> <strong>Real Name: </strong>{planet.name}</p>
-          <p className="card-text"> <strong>Group: </strong>{planet.name}</p>
+          <p className="card-text"> <strong>Climate: </strong>{planet.climate}</p>
+          <p className="card-text"> <strong>Diameter: </strong>{planet.diameter}</p>
           <Link to={`planet/${planet.name}`}>More...</Link>
             </div>
           </div>
