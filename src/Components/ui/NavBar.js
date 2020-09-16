@@ -4,25 +4,13 @@ import { Link, NavLink, useHistory } from 'react-router-dom'
 export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-            
-            <Link 
-                className="navbar-brand" 
-                to="/"
-            >
-                Menu Principal
+            <Link className="navbar-brand" to="/">
+            <img src="/assets/planets/SWLogo.png" width="50"  alt="" loading="lazy"/>
             </Link>
+
 
             <div className="navbar-collapse">
                 <div className="navbar-nav">
-
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-item nav-link" 
-                        exact
-                        to="/blackpink"
-                    >
-                        Blackpink
-                    </NavLink>
                     <NavLink 
                         activeClassName="active"
                         className="nav-item nav-link" 
